@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas García | Data Science</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Página personal de Lucas García, estudiante de Ciencia de Datos en México.">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-logo">LG</div>
+        <nav class="nav-links">
+            <a href="#about">Sobre mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-text">
+                <p class="hero-tag">Hola, soy</p>
+                <h1>Lucas García</h1>
+                <h2>Estudiante de Ciencia de Datos</h2>
+                <p class="hero-description">
+                    Me interesa el análisis de datos, el <strong>machine learning</strong> 
+                    y construir proyectos que no se queden en el papel.  
+                    Estudio Ciencia de Datos en México y me gusta trabajar con Python, GitHub y Docker.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Ver proyectos</a>
+                    <a href="#contact" class="btn secondary">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <p class="hero-card-title">Actualmente</p>
+                <ul>
+                    <li>🎓 Estudiante de Ciencia de Datos</li>
+                    <li>🐍 Programando en Python y pandas</li>
+                    <li>📊 Aprendiendo más de estadística y modelos</li>
+                    <li>⚽ Fan de proyectos con datos de deportes</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section id="about" class="section">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="section-content two-columns">
+                <p>
+                    Soy estudiante de Ciencia de Datos con interés en:
+                    <strong>modelos estadísticos</strong>, 
+                    <strong>visualización de datos</strong> y 
+                    <strong>proyectos reproducibles</strong> usando Git y Docker.
+                </p>
+                <p>
+                    Me gusta aprender construyendo cosas reales: desde analizar datos 
+                    de deportes hasta armar pequeñas aplicaciones web para visualizar información.  
+                    A futuro quiero trabajar en proyectos donde los datos sí se usen para tomar decisiones.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Proyectos</h2>
+            <p class="section-subtitle">
+                Algunos proyectos en los que he trabajado recientemente.
+            </p>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Grafos de Planes de Estudio</h3>
+                    <p>
+                        App en Streamlit que muestra los planes de estudio del ITAM como grafos 
+                        con prerrequisitos y correquisitos, usando JSON y Python.
+                    </p>
+                    <ul class="card-tags">
+                        <li>Python</li>
+                        <li>Streamlit</li>
+                        <li>Grafos</li>
+                        <li>GitHub</li>
+                    </ul>
+                    <div class="card-links">
+                        <!-- Cambia este link a tu repo real -->
+                        <a href="https://github.com/TU-USUARIO/Grafos-Planes-de-Estudio" target="_blank">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>Proyecto de datos deportivos</h3>
+                    <p>
+                        Análisis de datos de futbol americano / soccer usando pandas 
+                        para explorar estadísticas de equipos y jugadores.
+                    </p>
+                    <ul class="card-tags">
+                        <li>pandas</li>
+                        <li>Jupyter</li>
+                        <li>Deportes</li>
+                    </ul>
+                    <div class="card-links">
+                        <span>En construcción</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>Docker + Python</h3>
+                    <p>
+                        Pequeños experimentos poniendo scripts de análisis de datos 
+                        dentro de contenedores Docker para facilitar la reproducibilidad.
+                    </p>
+                    <ul class="card-tags">
+                        <li>Docker</li>
+                        <li>Python</li>
+                    </ul>
+                    <div class="card-links">
+                        <span>Notas privadas por ahora</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Lenguajes y herramientas</h3>
+                    <ul class="skills-list">
+                        <li>Python (pandas, matplotlib)</li>
+                        <li>Git y GitHub</li>
+                        <li>Docker (nivel básico-intermedio)</li>
+                        <li>Jupyter / VSCode / Cursor</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Intereses</h3>
+                    <ul class="skills-list">
+                        <li>Data Science aplicado a deportes</li>
+                        <li>Visualización de datos</li>
+                        <li>Probabilidad y estadística</li>
+                        <li>Proyectos reproducibles</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">
+                Si quieres platicar de proyectos, data science o colaborar en algo, escríbeme.
+            </p>
+            <div class="contact-box">
+                <p>📧 Email: <a href="mailto:tu.correo@example.com">lucas.garcia.arredo@gmail.com</a></p>
+                <p>💻 GitHub: <a href="https://github.com/TU-USUARIO" target="_blank">github.com/Lucas-G-A</a></p>
+                <!-- Agrega más si quieres -->
+                <!-- <p>🔗 LinkedIn: <a href="https://linkedin.com/in/tu_usuario" target="_blank">linkedin.com/in/tu_usuario</a></p> -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Lucas García. Construido con GitHub Pages.</p>
+    </footer>
+
+    <script>
+        // Año actual en el footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
