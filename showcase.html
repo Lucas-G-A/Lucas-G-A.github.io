@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Garcia Arredondo | Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta
+        name="description"
+        content="Showcase of live projects by Lucas Garcia Arredondo, including a Streamlit app for ITAM study plans and an e-commerce site for Dulce Sanchez jewelry."
+    />
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-logo">LG</div>
+        <nav class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="showcase.html">Showcase</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h1 class="section-title">Live project showcase</h1>
+            <p class="section-subtitle">
+                A closer look at two live projects I’ve built and maintain.
+            </p>
+
+            <div class="cards-grid">
+                <!-- GRAFOS / STREAMLIT APP -->
+                <article class="card">
+                    <h2>ITAM Study Plan Graphs</h2>
+                    <p><strong>Streamlit web app</strong></p>
+
+                    <img
+                        src="grafos-preview.png"
+                        alt="Screenshot of the ITAM study plan Streamlit app"
+                        class="project-preview"
+                    />
+
+                    <p>
+                        This app converts ITAM study plans from PDFs into structured JSON files
+                        and visualizes them as interactive prerequisite graphs. Users can select
+                        a plan, track their progress, automatically see which courses are now
+                        available, and download an updated JSON for any curriculum.
+                    </p>
+
+                    <ul class="card-tags">
+                        <li>Python</li>
+                        <li>Streamlit</li>
+                        <li>Graph theory</li>
+                        <li>JSON</li>
+                    </ul>
+
+                    <div class="card-links">
+                        <a
+                            href="https://grafos-planes-de-estudio-itam.streamlit.app"
+                            target="_blank"
+                            class="btn primary"
+                        >
+                            Open live app
+                        </a>
+                        <a
+                            href="https://github.com/Lucas-G-A/Grafos-Planes-de-Estudio"
+                            target="_blank"
+                            class="btn secondary"
+                        >
+                            View on GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <!-- DULCE SANCHEZ -->
+                <article class="card">
+                    <h2>Dulce Sanchez Jewelry</h2>
+                    <p><strong>E-commerce website</strong></p>
+
+                    <img
+                        src="dulcesanchez-preview.png"
+                        alt="Screenshot of Dulce Sanchez jewelry website"
+                        class="project-preview"
+                    />
+
+                    <p>
+                        E-commerce site for personalized energetic jewelry. I participated in
+                        the project and help maintain the site, track consumer behavior and
+                        analytics, and support marketing and finance for the business.
+                    </p>
+
+                    <ul class="card-tags">
+                        <li>E-commerce</li>
+                        <li>Analytics</li>
+                        <li>Marketing</li>
+                    </ul>
+
+                    <div class="card-links">
+                        <a
+                            href="https://dulcesanchez.com"
+                            target="_blank"
+                            class="btn primary"
+                        >
+                            Visit website
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Lucas Garcia Arredondo. Built with GitHub Pages.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

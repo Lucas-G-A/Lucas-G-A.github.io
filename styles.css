@@ -382,3 +382,21 @@ main {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
+.project-preview {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    margin: 8px 0 10px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Mejor layout para los botones dentro de las cards del showcase */
+.card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
