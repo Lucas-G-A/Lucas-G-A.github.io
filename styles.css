@@ -383,22 +383,31 @@ main {
     }
 }
 
-.project-preview {
-    width: 100%;
-    height: 180px;            /* Alto fijo para que no se haga gigante */
-    border-radius: 12px;
-    border: 1px solid rgba(148, 163, 184, 0.4);
-    margin: 8px 0 12px;
-    object-fit: cover;        /* Recorta sin deformar */
-    object-position: top;     /* Importante: toma la parte visible de arriba */
-    display: block;
+
+/* GRID ESPECIAL PARA SHOWCASE (dos columnas perfectas) */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
 }
 
-/* Mejor layout para los botones dentro de las cards del showcase */
-.card-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 8px;
+/* Altura fija de las imágenes SIN deformarse */
+.project-preview {
+    width: 100%;
+    height: 160px;            /* Ajuste ideal para screenshots horizontales */
+    object-fit: cover;
+    object-position: top;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    display: block;
+    background: #0f172a;      /* Fondo si la imagen carga lento */
 }
+
+/* Ajuste responsivo: en pantallas pequeñas solo 1 columna */
+@media (max-width: 900px) {
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
