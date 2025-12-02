@@ -401,8 +401,13 @@ main {
     border-radius: 12px;
     border: 1px solid rgba(148, 163, 184, 0.4);
     display: block;
-    margin: 0 auto 16px auto;          /* Center the image horizontally */
+    margin: 0 auto 20px auto;  /* Bottom margin for spacing */
     background: #0f172a;
+}
+
+/* Extra spacing for paragraphs after project preview images */
+.project-preview + p {
+    margin-top: 16px;
 }
 
 /* Ajuste responsivo: en pantallas pequeñas solo 1 columna */
