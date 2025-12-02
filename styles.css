@@ -385,11 +385,13 @@ main {
 
 .project-preview {
     width: 100%;
-    border-radius: 16px;
-    border: 1px solid rgba(148, 163, 184, 0.5);
-    margin: 8px 0 10px;
+    height: 180px;            /* Alto fijo para que no se haga gigante */
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    margin: 8px 0 12px;
+    object-fit: cover;        /* Recorta sin deformar */
+    object-position: top;     /* Importante: toma la parte visible de arriba */
     display: block;
-    object-fit: cover;
 }
 
 /* Mejor layout para los botones dentro de las cards del showcase */
